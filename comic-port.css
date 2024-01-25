@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+           	background-color: lavenderblush;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row; /* Added to display items horizontally */
+        }
+
+header.sticky-title {
+    background-color: #333; /* Set your preferred background color */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+	top: 0;
+    z-index: 1000; /* Set a higher z-index to ensure it's above other elements */
+	
+}
+
+header.sticky-title h1 {
+	
+    color: white; /* Set your preferred text color */
+    margin: 0;
+	position: absolute;
+	right: 43%;
+	font-family: "Bebas Neue", sans-serif;
+ 	font-weight: 400;
+  	font-style: normal;
+	font-size: 30px; 
+	text-decoration: none;
+	
+	
+}
+
+/* Style for the navigation/menu */
+.barmenu {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the menu stays above other content */
+	width: 100%;
+	background-color: white;
+	height: 60px; /* adjust height of barmenu*/
+	margin-top: 50px;
+}
+
+.barmenu ul.menuitems {
+ 	width: 100%;
+	list-style: none;
+  	display: flex;
+    text-align: center; /* Center the text within the menu */
+}
+
+.barmenu li {
+  	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-right: 25px; /* Add space between menu items */
+	text-align: center;
+}
+
+.barmenu a {
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none ;
+ 	color: black;
+	font-size: 20px;
+  	font-weight: normal;
+	margin-bottom: auto;
+	display: inline-block; /* Ensure the anchor tags are inline blocks */
+    padding: 10px 10px; /* Add padding to anchor tags for better clickability */
+    /* Other link styles */
+	
+	
+}
+	
+
+/* Adjust letter-spacing for the text within the menu */
+.barmenu a {
+    font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+    letter-spacing: 5px; /* Adjust the letter spacing */
+	text-align: center;
+}
+
+* { 
+	margin: 0;
+    padding: 0;
+}
+
+.Portfolio-title {
+			color: black;
+            text-decoration: none;
+			font-family: "Bebas Neue", sans-serif;
+ 			font-weight: 400;
+  			font-style: normal;
+			font-size: 50px;
+			text-align: center;
+			padding: 30px;
+			width: 100%;
+	
+}
+
+
+.image-grid {
+            display: grid;
+            grid-template-columns: 400px 400px;
+            gap: 16px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 25px 16px;
+			margin-left: 255px;
+        }
+
+.pdf-item {
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+			padding: 35px;
+	
+        }
+
+        .pdf-item:hover {
+            transform: scale(1.05);
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 8px;
+            text-align: center;
+			font-family: 'Raleway', sans-serif;
+			text-decoration: none ;
+        }
+
+        .pdf-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #pdf-viewer {
+            width: 80%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #fff;
+        }

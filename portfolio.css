@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+	background-color: lavenderblush;
+}
+
+header.sticky-title {
+    background-color: #333; /* Set your preferred background color */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+	top: 0;
+    z-index: 1000; /* Set a higher z-index to ensure it's above other elements */
+	
+}
+
+header.sticky-title h1 {
+	
+    color: white; /* Set your preferred text color */
+    margin: 0;
+	position: absolute;
+	right: 43%;
+	font-family: "Bebas Neue", sans-serif;
+ 	font-weight: 400;
+  	font-style: normal;
+	font-size: 30px; 
+	text-decoration: none;
+	
+	
+}
+
+/* Style for the navigation/menu */
+.barmenu {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the menu stays above other content */
+	width: 100%;
+	background-color: white;
+	height: 60px; /* adjust height of barmenu*/
+	margin-top: 50px;
+}
+
+.barmenu ul.menuitems {
+ 	width: 100%;
+	list-style: none;
+  	display: flex;
+    text-align: center; /* Center the text within the menu */
+}
+
+.barmenu li {
+  	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-right: 25px; /* Add space between menu items */
+	text-align: center;
+}
+
+.barmenu a {
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none ;
+ 	color: black;
+	font-size: 20px;
+  	font-weight: normal;
+	margin-bottom: auto;
+	display: inline-block; /* Ensure the anchor tags are inline blocks */
+    padding: 10px 10px; /* Add padding to anchor tags for better clickability */
+    /* Other link styles */
+	
+	
+}
+	
+
+/* Adjust letter-spacing for the text within the menu */
+.barmenu a {
+    font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+    letter-spacing: 5px; /* Adjust the letter spacing */
+	text-align: center;
+}
+
+* { 
+	margin: 0;
+    padding: 0;
+}
+
+.Portfolio-title {
+			color: black;
+            text-decoration: none;
+			font-family: "Bebas Neue", sans-serif;
+ 			font-weight: 400;
+  			font-style: normal;
+			font-size: 50px;
+			text-align: center;
+			padding: 30px;
+	
+}
+
+ .portfolio-container {
+            display: grid;
+            grid-template-columns: 500px 500px;
+            gap: 100px;
+	 		padding: 30px;
+            width: 800px;
+	 		margin-left: 125px;
+	 		outline-color: black;
+			outline-width: thin;
+	 		text-align: center;
+           
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+	
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+.portfolio-item h1{
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none ;
+ 	color: black;
+	font-size: 20px;
+  	font-weight: normal;
+}
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            text-align: center;
+            color: #fff;
+        }
+
+        .overlay-content a {
+            color: #fff;
+            text-decoration: none;
+			font-family: "Bebas Neue", sans-serif;
+ 			font-weight: 400;
+  			font-style: normal;
+			font-size: 30px; 
+        }
