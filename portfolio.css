@@ -169,11 +169,8 @@ header.sticky-title h1 {
  			font-weight: 400;
   			font-style: normal;
 			font-size: 30px; 
-			
+			padding: 100px;
+			text-decoration: underline;
         }
-.h3{
 
-	padding: 100px;
-	text-decoration: underline;
-}
 
