@@ -118,29 +118,31 @@ header.sticky-title h1 {
 }
 
 
-.image-grid {
+.writing {
            text-align: center;
         }
 
-.pdf-item {
+.box-button {
             cursor: pointer;
             overflow: hidden;
             position: relative;
             width: 300px;
-            margin: 10px;
+            height: 200px;
+            border: 1px solid #ccc;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-			padding: 35px;
-	    display: inline-block;
-	
+		margin: 50px;
+	display: inline-block;
         }
 
-        .pdf-item:hover {
-            transform: scale(1.05);
+        .box-button:hover {
+            transform: scale(1.1);
+			
         }
 
-        .thumbnail {
+
+
+	.thumbnail {
             width: 100%;
             height: auto;
         }
@@ -160,15 +162,12 @@ header.sticky-title h1 {
         }
 
 	.caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
             width: 100%;
             color: #fff;
             padding: 8px;
             text-align: center;
-			font-family: 'Raleway', sans-serif;
-			text-decoration: none ;
+	    font-family: 'Raleway', sans-serif;
+	    text-decoration: none ;
 	    margin-top: 10px; 
         }
 
